@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+*, html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/wallpaper1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container {
+    width: 35%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.397);
+    box-shadow: 0 0 15px rgba(48, 47, 47, 0.678);
+}
+
+.form-login {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.form-login .ttl-section {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    /* border: 1px solid black; */
+}
+
+.form-login .ttl-section .ttl {
+    font-family: 'Poppins';
+    font-size: 45px;
+    color: white;
+    text-shadow: 0 0 40px rgb(204, 198, 198);
+}
+
+.form-login .user-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    /* border: 1px solid black; */
+}
+
+.form-login .pw-section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    /* border: 1px solid black; */
+}
+
+.form-login .user-section .user {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+    text-shadow: 0 0 20px rgb(204, 198, 198);
+
+}
+
+.form-login .pw-section .password {
+    font-family: 'PT Sans';
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: white;
+    text-shadow: 0 0 20px rgb(204, 198, 198);
+
+
+}
+
+.form-login .user-section input[type=text] {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(121, 21, 151, 0.151);
+    border: 1px solid rgb(209, 201, 209);
+    border-radius: 5px;
+}
+
+.form-login .pw-section input[type=password] {
+    width: 100%;
+    height: 30px;
+    background-color: rgba(121, 21, 151, 0.151);
+    border: 1px solid rgb(209, 201, 209);
+    border-radius: 5px;
+}
+
+.form-login .user-section input[type=text]:focus {
+    background-color: rgba(199, 195, 195, 0.5);
+
+}
+
+
+.form-login .pw-section input[type=password]:focus {
+    background-color: rgba(199, 195, 195, 0.5);
+
+}
+
+.form-login .user-section [type=text], .form-login .pw-section [type=password] {
+    box-sizing: border-box;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+    padding-left: 5px;
+    color: white;
+}
+
+.form-login .submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid white; */
+}
+
+.form-login .submit .btn-sub {
+    width: 70%;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(223, 213, 228);
+    font-family: 'Poppins';
+    color: rgba(121, 21, 151, 0.918);
+    font-size: 15px;
+    transition: .5s ease;
+}
+
+.form-login .submit .btn-sub:hover {
+    border: 1px solid rgba(215, 205, 218, 0.918);
+    background-color: rgba(0, 0, 0, 0.096);
+    color: white;
+    transition: .5s ease;
+}
